@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+.nav-izq{
+    text-align: left;
+    
+}
+
+.nav-drc{
+    text-align: right;
+}
