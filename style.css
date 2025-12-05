@@ -3,11 +3,51 @@
     padding: 0;
 }
 
-.nav-izq{
+.encabezado{
+    background-image: url(img/home-bg.jpg);
+}
+.encabezado .nav-izq{
     text-align: left;
+    color: white;
+    display: flex;
+}
+
+.encabezado .nav-drc a{
+    color: white;
     
 }
 
-.nav-drc{
-    text-align: right;
+.encabezado .header-title #title1{
+    color: white;
+}
+
+.encabezado .header-title #title2{
+    color: white;
+}
+
+.encabezado .header-title #parrafo1{
+    color: white;
+}
+
+.encabezado .header-title #boton1{
+    color: white;
+    background-color: gray;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.gallery1 {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.gallery1 img {
+  width: 30%;
+  height: 30%;
 }
