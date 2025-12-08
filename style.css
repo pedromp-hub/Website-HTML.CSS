@@ -1,53 +1,113 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0;  /*Borra márgenes por defecto*/
+    padding: 0; /*Borra rellenos por defecto*/
+    box-sizing: border-box; /*Evita que el padding aumente el tamaño real del elemento*/
+    font-family: Arial, Helvetica, sans-serif;  /*Fuente general*/
+}
+
+body{
+    background-color: black;    /*Fondo negro para toda la página*/
+    color: white;   /*Texto blanco por defecto*/
 }
 
 .encabezado{
-    background-image: url(img/home-bg.jpg);
-}
-.encabezado .nav-izq{
-    text-align: left;
-    color: white;
-    display: flex;
+    height: 100vh;  /*Lo que ocupa la altura de la pantalla*/
+    background: url("img/home-bg.jpg") center/cover no-repeat; /*Imagen de fondo centrada y ajustada*/
+    position: relative; /*Posicion en la que se coloca*/
 }
 
-.encabezado .nav-drc a{
-    color: white;
-    
+nav {
+    position: absolute; /*Para que se coloque encima de la imagen*/
+    top: 0; /*Para que se coloque en la parte superior*/
+    width: 100%; /*Ancho que va a ocupar*/
+    padding: 25px 60px; /*Espacios de rellenos dentro*/
+    display: flex; /*Para que se alineen horizontalmente*/
+    justify-content: space-between; /*Para que la derecha y la izquierda esten separadas*/
+    align-items: center; /*Alineación en el centro de manera vertical*/
 }
 
-.encabezado .header-title #title1{
-    color: white;
+.nav-izq p {
+    font-size: 17px; /*Tamaño del texto*/
+    font-weight: bold; /*Letra en negrita "gruesa"*/
 }
 
-.encabezado .header-title #title2{
-    color: white;
+.nav-drc a {
+    margin-left: 70px; /*Separacion*/
+    text-decoration: none; /*Quitar el subrayado*/
+    color: white; /*Color blanco del texto*/
+    font-size: 17px; /*Tamaño del texto*/
 }
 
-.encabezado .header-title #parrafo1{
-    color: white;
+.nav-drc a:hover {
+    color: gray; /*Aclarar color cuando pasamos ratón*/
 }
 
-.encabezado .header-title #boton1{
-    color: white;
-    background-color: gray;
+header {
+    height: 100%; /*Ocupar la altura del encabezado*/
+    display: flex; /*Alineación horizontalmente*/
+    align-items: center; /*Alinear en el centro verticalmente*/
+    padding-left: 60px; /*Distancia de separado de la izquierda*/
+}
+
+.header-title h1 {
+    font-size: 80px; /*Tamaño del texto*/
+    line-height: 1; /*Espacio entre lineas*/
+}
+
+.header-title h2 {
+    font-size: 19px; /*Tamaño del texto*/
+    letter-spacing: 2px; /*Separación entre letras*/
+}
+
+#parrafo1 {
+    font-size: 15px; /*Tamaño del texto*/
+    margin-top: 10px; /*Separacion por arriba*/
+}
+
+#boton1 {
+    margin-top: 25px; /*Separación con el texto*/
+    padding: 12px 25px; /*Tamaño del boton*/
+    border-radius: 6px; /*Curva de las esquinas del boton*/
+    border: none; /*Eliminar borde*/
+    background: gray; /*Color de fondo del boton*/
+    cursor: pointer; /*Poner la mano al pasar el ratón por encima*/
+}
+
+#boton1 p {
+    color: white; /*Color del texto de dentro del botón*/
+    font-weight: bold; /*Letras en negrita "gruesas" dentro del botón*/
+    font-size: 15px; /*Tamaño del texto*/
 }
 
 .gallery {
-  display: flex;
-  gap: 20px;
-  background-color: black;
+    display: flex; /*Alineacion horizontal*/
+    justify-content: center; /*centrar las imagenes*/
+    gap: 20px; /*Espacio entre las imagenes*/
+    padding: 40px 0; /*Espacio vertical alrededor*/
+    margin-top: -70px; /*La sube sobre la imagen del encabezado*/
 }
 
-.gallery1 {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+.gallery div {
+    position: relative; /*Colocar el texto encima*/
+    width: 330px; /*Ancho fijo*/
+    height: 150px; /*Alto fijo*/
+    border-radius: 12px; /*Redondeo de los bordes*/
+    overflow: hidden; /*Ocultar exceso de la imagen*/
+    cursor: pointer; /*Pone la mano al pasar el raton por encima*/
 }
 
-.gallery1 img {
-  width: 30%;
-  height: 30%;
+.gallery img {
+    width: 100%; /*Tamaño imagen adaptada al ancho del contenedor*/
+    height: 100%; /*Tamaño imagen adaptada al alto del contendor*/
+    object-fit: cover; /*Cortar imagen sin deformar*/
+}
+
+.gallery span {
+    position: absolute; /*Colocar el texto encima de la imagen*/
+    bottom: 10px; /*Separacion por abajo*/
+    left: 10px; /*Separación desde la izquierda*/
+    color: white; /*Color de el texto*/
+    font-weight: bold; /*Texto en negrita "grueso"*/
+    font-size: 19px; /*Tamaño del texto*/
+    text-shadow: 2px 2px 5px black; /*Sombra en el texto*/
 }
