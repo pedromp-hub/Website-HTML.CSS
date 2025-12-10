@@ -66,7 +66,7 @@ header {
 
 #boton1 {
     margin-top: 25px; /*Separación con el texto*/
-    padding: 12px 25px; /*Tamaño del boton*/
+    padding: 12px 25px; /*Espaciado abajo y arriba*/
     border-radius: 6px; /*Curva de las esquinas del boton*/
     border: none; /*Eliminar borde*/
     background: gray; /*Color de fondo del boton*/
@@ -135,7 +135,7 @@ header {
 
 .about #about1 #boton2{
     margin-top: 25px; /*Separación con el texto*/
-    padding: 12px 25px; /*Tamaño del boton*/
+    padding: 12px 25px; /*Espacio arriba y abajo*/
     border-radius: 6px; /*Curva de las esquinas del boton*/
     border: none; /*Eliminar borde*/
     background: gray; /*Color de fondo del boton*/
@@ -152,11 +152,45 @@ header {
     display: flex; /*Alinearlo horizontalmente*/
     align-items: center; /*Objetos alineados en el centro*/
     justify-content: center; /*Contenido justificado en el centro*/
-    padding-top: 4%;
+    padding-top: 4%; /*Distancia de seperado desde arriba*/
 }
 
 .about #about2 img {
     width: 350px;   /*Tamaño de la imagen por ancho*/
     height: auto;   /*Tamaño de la imagen por alto*/
 }
-    
+
+.popular {
+    padding-top: 80px; /*Distancia serparada desde arriba*/
+    text-align: center; /*Texto alineado en el centro*/
+}
+
+.popular h1{
+    font-size: 40px; /*Tamaño de la fuente*/
+}
+
+.popular .gallery2 {
+    margin-top: 40px; /*Distancia de margen con el titulo*/
+    display: flex; /*Alinearlo horizontalmente*/
+    justify-content: center; /* Justificarlo todo en el centro*/
+    gap: 40px; /*Distancia de separado entre imagenes*/
+    flex-wrap: wrap; /*Para que si no caben bajen*/
+}
+
+.popular .gallery2 img{
+    width: 300px; /*Ancho de la imagen*/
+    height: 200px; /*Alto de la imagen*/
+    object-fit: cover; /*Recortar imagen sin deformar*/
+    border-radius: 12px; /*Borde redondeado*/
+}
+
+.popular h2{
+    margin: 12px 0 5px 0; /*Margen arriba y abajo*/
+    font-size: 20px; /*Tamaño del texto*/
+    text-align: left; /*Texto alineado a la izquierda*/
+}
+
+.popular p{
+    font-size: 12px; /*Tamaño del texto*/
+    text-align: left; /*Texto alineado a la izquierda*/
+}
