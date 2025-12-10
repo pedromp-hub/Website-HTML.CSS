@@ -193,4 +193,42 @@ header {
 .popular p{
     font-size: 12px; /*Tamaño del texto*/
     text-align: left; /*Texto alineado a la izquierda*/
+    padding-bottom: 40%; /*Distancia por abajo*/
+}
+
+.explore {
+  background-image: url(img/explore-beach.jpg); /*Metemos la imagen de fondo para le seccion*/
+  background-size: cover; /*Para cubir todo el espacio*/
+  background-position: center; /*Para que la imagen de fondo este en el centro*/
+  height: 400px; /*Altura de la imagen*/
+  position: relative; /*Para poder colocar texto encima*/
+  width: 100%; /*Ancho de la imagen*/
+}
+
+.explore div {
+  position: absolute; /*Colocar texto encima de la imagen*/
+  bottom: 20px; /*Distancia por abajo*/
+  padding-left: 80px; /*Distancia por la izquierda*/
+  text-align: left; /*Texto alineado a la izquierda*/
+}
+
+.explore h1 {
+  font-size: 40px; /*Tamaño de fuente*/
+}
+
+.explore2 {
+    display: flex; /*Alinear horizontalmente*/
+    justify-content: space-between; /*Separamos derecha y izquierda*/
+    align-items: center; /*Alinear los objetos en el centro*/
+}
+    
+.explore2 #p-izq {
+    padding-top: 2%; /*Distancia de separado por la parte de arriba*/
+    justify-content: center; /*Contenido justificado en el centro*/
+    padding-left: 80px; /*Distancia de separado por la izquierda*/
+}
+
+.explore2 #p-drc {
+    text-align: right; /*Texto alineado a la derecha*/
+    padding-right: 80px; /*Distancia de separado por la derecha*/
 }
