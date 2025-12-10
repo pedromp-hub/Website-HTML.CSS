@@ -111,3 +111,52 @@ header {
     font-size: 19px; /*Tamaño del texto*/
     text-shadow: 2px 2px 5px black; /*Sombra en el texto*/
 }
+
+.about{
+    padding-left: 8%; /*Distancia de separado de la izquierda*/
+    display: flex; /*Alinearlo horizontalmente*/
+    gap: 30%; /*Distancia de la imagen sobre el texto*/
+}
+.about #about1 #h1-1{
+    font-size: 40px; /*Tamaño de la fuente*/
+    padding-top: 25%; /*Distancia de separado por arriba*/
+    
+}
+
+.about #about1 #h1-2{
+    font-size: 40px; /*Tamaño de la fuente*/
+    padding-bottom: 2%; /*Distancia por la parte inferior*/
+    
+}
+
+.about #about1 p{
+    font-size: 15px; /*Tamaño de la fuente*/
+}
+
+.about #about1 #boton2{
+    margin-top: 25px; /*Separación con el texto*/
+    padding: 12px 25px; /*Tamaño del boton*/
+    border-radius: 6px; /*Curva de las esquinas del boton*/
+    border: none; /*Eliminar borde*/
+    background: gray; /*Color de fondo del boton*/
+    cursor: pointer; /*Poner la mano al pasar el ratón por encima*/ 
+}
+
+.about #about1 #boton2 p{
+    color: white; /*Color del texto de dentro del botón*/
+    font-weight: bold; /*Letras en negrita "gruesas" dentro del botón*/
+    font-size: 15px; /*Tamaño del texto*/
+}
+
+.about #about2 {
+    display: flex; /*Alinearlo horizontalmente*/
+    align-items: center; /*Objetos alineados en el centro*/
+    justify-content: center; /*Contenido justificado en el centro*/
+    padding-top: 4%;
+}
+
+.about #about2 img {
+    width: 350px;   /*Tamaño de la imagen por ancho*/
+    height: auto;   /*Tamaño de la imagen por alto*/
+}
+    
