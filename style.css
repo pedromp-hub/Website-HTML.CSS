@@ -232,3 +232,58 @@ header {
     text-align: right; /*Texto alineado a la derecha*/
     padding-right: 80px; /*Distancia de separado por la derecha*/
 }
+
+.journey {
+    padding-right: 8%; /*Distancia de separado de la izquierda*/
+    display: flex; /*Alinearlo horizontalmente*/
+    gap: 20%; /*Distancia de la imagen sobre el texto*/
+}
+
+.journey #imagen {
+    display: flex; /*Alinearlo horizontalmente*/
+    align-items: center; /*Objetos alineados en el centro*/
+    justify-content: center; /*Contenido justificado en el centro*/
+    padding-top: 8%; /*Distancia de separado desde arriba*/
+    padding-left: 10%; /*Distancia de separado desde la izquierda*/
+}
+
+.journey #imagen img {
+    width: 510px;   /*Tamaño de la imagen por ancho*/
+    height: 540px;   /*Tamaño de la imagen por alto*/
+}
+
+.journey #contenido {
+    padding-top: 11%; /*Distancia de separado por arriba*/
+}
+.journey #contenido h1{
+    font-size: 40px; /*Tamaño de la letra*/
+}
+
+.journey #contenido p{
+    font-size: 12px; /*Tamaño de la letra*/
+    padding-top: 1%; /*Distancia de separado por arriba*/
+}
+
+.journey .correo {
+    gap: 12px; /*Distancia entre el input y el button*/
+    margin-top: 20px; /*Distancia de separado del margen superior*/
+}
+
+.journey .correo input[type="email"] {
+    padding: 12px 15px; /*Distancia de separado para la caja en los lados*/
+    border: none; /*No tenga bordes*/
+    background-color: turquoise; /*Color de fondo*/
+    color: black; /*Color de las letras del interior*/
+}
+
+.journey .correo button[type="submit"] {
+    padding: 12px 20px; /*Distancia de separado para el boton en los lados*/
+    background-color: gray; /*Color de fondo para el boton*/
+    color: white; /*Color de las letras del interior del boton*/
+    border: none; /*No tenga bordes*/
+    cursor: pointer; /*Para cuando el ratón pasa por encima se convierta en mano*/
+    font-weight: bold; /*Las letras del interior sean negritas "Gruesas"*/
+    display: flex; /*Alinearlo de manera horizontal*/
+    align-items: center; /*Objetos alineados en el centro*/ 
+    margin-top: 20px; /*Distancia de separado del margen superior*/
+}
