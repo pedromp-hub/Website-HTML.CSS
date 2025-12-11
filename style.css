@@ -250,6 +250,7 @@ header {
 .journey #imagen img {
     width: 510px;   /*Tamaño de la imagen por ancho*/
     height: 540px;   /*Tamaño de la imagen por alto*/
+    padding-bottom: 120px;
 }
 
 .journey #contenido {
@@ -286,4 +287,73 @@ header {
     display: flex; /*Alinearlo de manera horizontal*/
     align-items: center; /*Objetos alineados en el centro*/ 
     margin-top: 20px; /*Distancia de separado del margen superior*/
+}
+
+.footer {
+  background-color: #1a1a1a; /*Color de fondo para el footer*/
+  color: white; /*Color de las letras del footer*/
+  padding: 40px 20px; /*Distancia de seprado por ambos lados*/
+}
+
+#Contenido-footer {
+  display: flex; /*Alinerlo de manera horizontal*/
+  justify-content: space-between; /*Contenido justificado separandolo derecha y izquierda*/
+  gap: 30px; /*Separacion entre cada columna*/
+  margin-bottom: 40px; /*Distancia del margen inferior*/
+}
+
+#footer-travel {
+  flex: 1 1 250px; /*Para que crezca en caso de que falte espacio o haya espacio de sobra*/
+}
+
+#footer-travel h2 {
+  font-size: 24px; /*Tamaño de la fuente*/
+  margin-bottom: 10px; /*Distancia del margen inferior*/
+  color: white; /*Color de las letras*/
+}
+
+#footer-travel p {
+  font-size: 16px; /*Tamaño de la fuente*/
+}
+
+#columna {
+  flex: 1 1 180px; /*Para que crezca en caso de que falte espacio o haya espacio de sobra*/
+}
+
+#columna h2 {
+  font-size: 20px; /*Tamaño de la fuente*/
+  margin-bottom: 10px; /*Distancia de separado del margen inferior*/
+  color: white; /*Color de las letras*/
+}
+
+#columna ul {
+  list-style: none; /*Eliminar el estilo en lista*/
+}
+
+#columna ul li {
+  margin-bottom: 8px; /*Distancia de separado del margen inferior*/
+}
+
+#columna ul li a {
+  color: white; /*Color de las letras*/
+  text-decoration: none; /*Quitar el subrayado*/
+  font-size: 15px; /*Tamaño de la fuente*/
+}
+
+#contenidofinal-footer {
+  display: flex; /*Alinearlo de manera horizontal*/
+  justify-content: space-between; /*Contenido justificado separandolo derecha y izquierda*/
+  align-items: center; /*Objetos alineados en el centro*/
+  padding-top: 20px; /*Distancia de separado por la parte superior*/
+}
+
+#copy p {
+  font-size: 14px; /*Tamaño de la fuente*/
+  color: gray; /*Color de las letras*/
+}
+
+#redes a {
+  margin-left: 15px; /*Distancia del margen izquierdo*/
+  font-size: 20px; /*Tamaño de la fuente*/
+  text-decoration: none; /*Quitar el subrayado*/
 }
